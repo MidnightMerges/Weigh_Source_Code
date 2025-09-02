@@ -39,6 +39,22 @@ span.highlighted-yellow-text {
   padding-top: 3rem;
 }
 
+.carousel-item-2 {
+  background: url(../Assets/Images/banner-2.jpg);
+  background-size: cover;
+  background-position: 50% 50%; /* X%, Y% */
+  color: white;
+  padding-top: 3rem;
+}
+
+.carousel-item-3 {
+  background: url(../Assets/Images/banne-3.jpg);
+  background-size: cover;
+  background-position: 50% 50%; /* X%, Y% */
+  color: white;
+  padding-top: 3rem;
+}
+
 .car-1-headline {
   text-transform: capitalize;
   font-size: 3.5rem;
@@ -50,8 +66,30 @@ span.highlighted-yellow-text {
   inset: 0;
   background: linear-gradient(
     to right,
-    rgba(16, 28, 43, 0.98) 15%,
-    /* Adjust alpha for transparency */ rgba(16, 28, 43, 0.98) 60%
+    rgba(16, 28, 43, 0.98) 5%,
+    /* Adjust alpha for transparency */ rgba(16, 28, 43, 0.98) 2%
+  );
+}
+
+.carousel-item-2::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(16, 28, 43, 0.98) 5%,
+    /* Adjust alpha for transparency */ rgba(16, 28, 43, 0.98) 2%
+  );
+}
+
+.carousel-item-3::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(16, 28, 43, 0.98) 5%,
+    /* Adjust alpha for transparency */ rgba(16, 28, 43, 0.98) 2%
   );
 }
 
