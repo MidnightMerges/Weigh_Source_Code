@@ -53,10 +53,6 @@ a.btn-theme-green:hover {
   gap: 5px;
 }
 
-h2.fat-gold-headline {
-  font-size: 1.8rem;
-}
-
 .product-rating i {
   color: var(--theme-gold);
 }
@@ -64,6 +60,10 @@ h2.fat-gold-headline {
 .product-title {
   color: var(--theme-gold);
   font-weight: 700;
+}
+
+.product-headline {
+  font-size: 1.5rem;
 }
 
 .product-price {
@@ -204,6 +204,34 @@ body {
 .footer-column ul li a:hover {
   color: #f5c542;
 }
+
+/* Swiper ALLL Css */
+
+.swiper {
+  width: 75%;
+  height: auto;
+}
+
+.swiper img {
+  width: 100%;
+  height: auto;
+}
+
+.swiper-slide:nth-child(1n) {
+  background-color: white;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Swiper ALL Css end */
 
 /* Responsive */
 @media (max-width: 900px) {
