@@ -40,7 +40,7 @@
     <!-- Scroll Reveal -->
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
   </head>
-  <body class="pt-0">
+  <body class="pt-0" style="position: relative">
     <nav class="navbar sticky-top navbar-expand-md bg-dark navbar-dark">
       <div class="container">
         <a class="navbar-brand" href="#">
@@ -70,13 +70,7 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Products</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Faq</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Reviews</a>
+              <a class="nav-link" href="#products-section">Products</a>
             </li>
           </ul>
         </div>
@@ -242,7 +236,7 @@
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="1500">
             <img
-              src="./Assets/Images/sliderimage1.webp"
+              src="./Assets/Images/banner-shilajit.jpeg"
               class="d-block w-100"
               alt="..."
             />
@@ -283,17 +277,20 @@
       </div>
 
       <!-- Testowai Gold Section -->
-      <section class="my-5">
+      <section class="my-5" id="products-section">
         <div class="container">
           <div class="row align-items-center">
             <!-- Left Side - Product Image -->
-            <div class="col-lg-6 text-center mb-4 mb-md-0">
+            <div
+              class="col-lg-6 text-center mb-4 mb-md-0"
+              style="position: relative"
+            >
               <!-- <img
                 src="./Assets/Images/fatcrush-gold.png"
                 alt="Waigh Fatcrush Gold"
                 class="image-product"
               /> -->
-              <div class="swiper mySwiper">
+              <!-- <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <img src="./Assets/Images/testowai-gold.png" alt="" />
@@ -309,6 +306,43 @@
                   </div>
                   <div class="swiper-slide">
                     <img src="./Assets/Images/testowaigold4.webp" alt="" />
+                  </div>
+                </div>
+              </div> -->
+              <div class="swiper swiper-testowaigold-main common-swiper-main">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./Assets/Images/w3.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./Assets/Images/w2.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./Assets/Images/w1.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./Assets/Images/shilajitgold6.webp" />
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+              <div
+                thumbsSlider=""
+                class="swiper swiper-testowaigold common-swiper"
+              >
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./Assets/Images/w3.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./Assets/Images/w2.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./Assets/Images/w1.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./Assets/Images/shilajitgold6.webp" />
                   </div>
                 </div>
               </div>
@@ -539,25 +573,34 @@
                 alt="Waigh Fatcrush Gold"
                 class="image-product"
               /> -->
-              <div class="swiper mySwiper">
+              <div class="swiper swiper-fatcrushgold-main common-swiper-main">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
-                    <img src="./Assets/Images/fatcrush-gold.png" alt="" />
+                    <img src="./Assets/Images/FatCrush (white).png" />
                   </div>
                   <div class="swiper-slide">
-                    <img src="./Assets/Images/fatcrushgold2.webp" alt="" />
+                    <img src="./Assets/Images/FatCrush wh2.png" />
                   </div>
                   <div class="swiper-slide">
-                    <img
-                      src="./Assets/Images/fatcrushgoldsupplements.webp"
-                      alt=""
-                    />
+                    <img src="./Assets/Images/shilajitgold6.webp" />
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+              <div
+                thumbsSlider=""
+                class="swiper swiper-fatcrushgold common-swiper"
+              >
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./Assets/Images/FatCrush (white).png" />
                   </div>
                   <div class="swiper-slide">
-                    <img src="./Assets/Images/fatcrushgold3.webp" alt="" />
+                    <img src="./Assets/Images/FatCrush wh2.png" />
                   </div>
                   <div class="swiper-slide">
-                    <img src="./Assets/Images/fatcrushgold4.webp" alt="" />
+                    <img src="./Assets/Images/shilajitgold6.webp" />
                   </div>
                 </div>
               </div>
@@ -577,28 +620,52 @@
                 alt="Waigh Fatcrush Gold"
                 class="image-product"
               /> -->
-              <div class="swiper mySwiper">
+              <div class="swiper swiper-shilajitgold-main common-swiper-main">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
-                    <img src="./Assets/Images/shilajit-gold.png" alt="" />
+                    <img src="./Assets/Images/shilajitgold3.webp" />
                   </div>
                   <div class="swiper-slide">
-                    <img src="./Assets/Images/shilajitgold2.webp" alt="" />
+                    <img src="./Assets/Images/shilajitgold4.webp" />
                   </div>
                   <div class="swiper-slide">
-                    <img src="./Assets/Images/shilajitgold3.webp" alt="" />
+                    <img src="./Assets/Images/shilajitgold6.webp" />
                   </div>
                   <div class="swiper-slide">
-                    <img src="./Assets/Images/shilajitgold4.webp" alt="" />
+                    <img src="./Assets/Images/shilajitgold5.webp" />
                   </div>
                   <div class="swiper-slide">
-                    <img src="./Assets/Images/shilajitgold5.webp" alt="" />
+                    <img src="./Assets/Images/shilajitgold7.jpeg" />
                   </div>
                   <div class="swiper-slide">
-                    <img src="./Assets/Images/shilajitgold6.webp" alt="" />
+                    <img src="./Assets/Images/shilajitgold8.jpeg" />
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+              <div
+                thumbsSlider=""
+                class="swiper swiper-shilajitgold common-swiper"
+              >
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./Assets/Images/shilajitgold3.webp" />
                   </div>
                   <div class="swiper-slide">
-                    <img src="./Assets/Images/shilajitgold7.webp" alt="" />
+                    <img src="./Assets/Images/shilajitgold4.webp" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./Assets/Images/shilajitgold6.webp" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./Assets/Images/shilajitgold5.webp" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./Assets/Images/shilajitgold7.jpeg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./Assets/Images/shilajitgold8.jpeg" />
                   </div>
                 </div>
               </div>
@@ -787,9 +854,36 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
   <script>
-    var swiper = new Swiper(".mySwiper", {
-      effect: "cards",
-      grabCursor: true,
+    document.querySelectorAll(".common-swiper").forEach((thumbEl, index) => {
+      const mainEl = thumbEl.parentElement.querySelector(".common-swiper-main");
+
+      const thumbsSwiper = new Swiper(thumbEl, {
+        loop: true,
+        spaceBetween: 10,
+        slidesPerView: 3,
+        freeMode: true,
+        watchSlidesProgress: true,
+        autoplay: {
+          delay: 1500,
+          disableOnInteraction: false,
+        },
+      });
+
+      new Swiper(mainEl, {
+        loop: true,
+        spaceBetween: 10,
+        navigation: {
+          nextEl: mainEl.querySelector(".swiper-button-next"),
+          prevEl: mainEl.querySelector(".swiper-button-prev"),
+        },
+        thumbs: {
+          swiper: thumbsSwiper,
+        },
+        autoplay: {
+          delay: 1500,
+          disableOnInteraction: false,
+        },
+      });
     });
   </script>
 </html>
