@@ -623,7 +623,7 @@
               <div class="swiper swiper-shilajitgold-main common-swiper-main">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
-                    <img src="./Assets/Images/shilajitgold3.webp" />
+                    <img src="./Assets/Images/Single WaiGH.jpg" />
                   </div>
                   <div class="swiper-slide">
                     <img src="./Assets/Images/shilajitgold4.webp" />
@@ -636,6 +636,9 @@
                   </div>
                   <div class="swiper-slide">
                     <img src="./Assets/Images/shilajitgold7.jpeg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./Assets/Images/shilajitgold9.jpeg" />
                   </div>
                   <div class="swiper-slide">
                     <img src="./Assets/Images/shilajitgold8.jpeg" />
@@ -650,7 +653,7 @@
               >
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
-                    <img src="./Assets/Images/shilajitgold3.webp" />
+                    <img src="./Assets/Images/Single WaiGH.jpg" />
                   </div>
                   <div class="swiper-slide">
                     <img src="./Assets/Images/shilajitgold4.webp" />
@@ -663,6 +666,9 @@
                   </div>
                   <div class="swiper-slide">
                     <img src="./Assets/Images/shilajitgold7.jpeg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./Assets/Images/shilajitgold9.jpeg" />
                   </div>
                   <div class="swiper-slide">
                     <img src="./Assets/Images/shilajitgold8.jpeg" />
@@ -855,35 +861,51 @@
 
   <script>
     document.querySelectorAll(".common-swiper").forEach((thumbEl, index) => {
-      const mainEl = thumbEl.parentElement.querySelector(".common-swiper-main");
+    const mainEl = thumbEl.parentElement.querySelector(".common-swiper-main");
 
-      const thumbsSwiper = new Swiper(thumbEl, {
-        loop: true,
-        spaceBetween: 10,
-        slidesPerView: 3,
-        freeMode: true,
-        watchSlidesProgress: true,
-        autoplay: {
-          delay: 1500,
-          disableOnInteraction: false,
-        },
-      });
-
-      new Swiper(mainEl, {
-        loop: true,
-        spaceBetween: 10,
-        navigation: {
-          nextEl: mainEl.querySelector(".swiper-button-next"),
-          prevEl: mainEl.querySelector(".swiper-button-prev"),
-        },
-        thumbs: {
-          swiper: thumbsSwiper,
-        },
-        autoplay: {
-          delay: 1500,
-          disableOnInteraction: false,
-        },
-      });
+    // Init thumbs Swiper
+    const thumbsSwiper = new Swiper(thumbEl, {
+      loop: true,
+      spaceBetween: 10,
+      slidesPerView: 3,
+      freeMode: true,
+      watchSlidesProgress: true,
     });
+
+    // Init main Swiper 
+    const mainSwiper = new Swiper(mainEl, {
+      loop: true,
+      spaceBetween: 10,
+      navigation: {
+        nextEl: mainEl.querySelector(".swiper-button-next"),
+        prevEl: mainEl.querySelector(".swiper-button-prev"),
+      },
+      thumbs: {
+        swiper: thumbsSwiper,
+      },
+      autoplay: {
+        delay: 1500,
+        disableOnInteraction: false,
+      },
+    });
+
+    mainSwiper.autoplay.stop();
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            mainSwiper.autoplay.start();
+            observer.unobserve(mainEl);
+          }
+        });
+      },
+      {
+        threshold: 0.90, //The amount of section visible then Autoplay will start
+      }
+    );
+
+    observer.observe(mainEl);
+  });
   </script>
 </html>
