@@ -236,14 +236,14 @@
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="1500">
             <img
-              src="./Assets/Images/banner-shilajit.jpeg"
+              src="./Assets/Images/shilajitgold-banner.jpg"
               class="d-block w-100"
               alt="..."
             />
           </div>
           <div class="carousel-item" data-bs-interval="1500">
             <img
-              src="./Assets/Images/sliderimage2.webp"
+              src="./Assets/Images/testowaigold-banner.jpg"
               class="d-block w-100"
               alt="..."
             />
@@ -861,51 +861,51 @@
 
   <script>
     document.querySelectorAll(".common-swiper").forEach((thumbEl, index) => {
-    const mainEl = thumbEl.parentElement.querySelector(".common-swiper-main");
+      const mainEl = thumbEl.parentElement.querySelector(".common-swiper-main");
 
-    // Init thumbs Swiper
-    const thumbsSwiper = new Swiper(thumbEl, {
-      loop: true,
-      spaceBetween: 10,
-      slidesPerView: 3,
-      freeMode: true,
-      watchSlidesProgress: true,
+      // Init thumbs Swiper
+      const thumbsSwiper = new Swiper(thumbEl, {
+        loop: true,
+        spaceBetween: 10,
+        slidesPerView: 3,
+        freeMode: true,
+        watchSlidesProgress: true,
+      });
+
+      // Init main Swiper
+      const mainSwiper = new Swiper(mainEl, {
+        loop: true,
+        spaceBetween: 10,
+        navigation: {
+          nextEl: mainEl.querySelector(".swiper-button-next"),
+          prevEl: mainEl.querySelector(".swiper-button-prev"),
+        },
+        thumbs: {
+          swiper: thumbsSwiper,
+        },
+        autoplay: {
+          delay: 1500,
+          disableOnInteraction: false,
+        },
+      });
+
+      mainSwiper.autoplay.stop();
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              mainSwiper.autoplay.start();
+              observer.unobserve(mainEl);
+            }
+          });
+        },
+        {
+          threshold: 0.9, //The amount of section visible then Autoplay will start
+        }
+      );
+
+      observer.observe(mainEl);
     });
-
-    // Init main Swiper 
-    const mainSwiper = new Swiper(mainEl, {
-      loop: true,
-      spaceBetween: 10,
-      navigation: {
-        nextEl: mainEl.querySelector(".swiper-button-next"),
-        prevEl: mainEl.querySelector(".swiper-button-prev"),
-      },
-      thumbs: {
-        swiper: thumbsSwiper,
-      },
-      autoplay: {
-        delay: 1500,
-        disableOnInteraction: false,
-      },
-    });
-
-    mainSwiper.autoplay.stop();
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            mainSwiper.autoplay.start();
-            observer.unobserve(mainEl);
-          }
-        });
-      },
-      {
-        threshold: 0.90, //The amount of section visible then Autoplay will start
-      }
-    );
-
-    observer.observe(mainEl);
-  });
   </script>
 </html>
