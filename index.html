@@ -41,6 +41,12 @@
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
   </head>
   <body class="pt-0" style="position: relative">
+    <!-- Loader -->
+    <div id="loader">
+      <div class="ring"></div>
+      <div class="brand-text">Waigh Nutrition</div>
+    </div>
+
     <nav class="navbar sticky-top navbar-expand-md bg-dark navbar-dark">
       <div class="container">
         <a class="navbar-brand" href="#">
@@ -224,6 +230,8 @@
             type="button"
             data-bs-target="#carouselExampleIndicators"
             data-bs-slide-to="1"
+            class="active"
+            aria-current="true"
             aria-label="Slide 2"
           ></button>
           <button
@@ -232,9 +240,22 @@
             data-bs-slide-to="2"
             aria-label="Slide 3"
           ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="1500">
+            <img
+              src="./Assets/Images/Website-banner---Company-Info.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item" data-bs-interval="1500">
             <img
               src="./Assets/Images/shilajitgold-banner.jpg"
               class="d-block w-100"
@@ -860,6 +881,16 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
   <script>
+    window.addEventListener("load", () => {
+      const loader = document.getElementById("loader");
+      const content = document.getElementById("content");
+      loader.classList.add("loader--hide");
+      setTimeout(() => {
+        loader.style.display = "none";
+        content.style.display = "block";
+      }, 600); // Wait for fade-out
+    });
+
     document.querySelectorAll(".common-swiper").forEach((thumbEl, index) => {
       const mainEl = thumbEl.parentElement.querySelector(".common-swiper-main");
 
