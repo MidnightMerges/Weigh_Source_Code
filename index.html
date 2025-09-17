@@ -1,92 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Bootstrap CDN Styles-->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Unbounded Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Bootstrap CDN Styles-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
 
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-    />
+  <!-- Unbounded Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;700;900&display=swap" rel="stylesheet" />
 
-    <!-- Swiper JS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
 
-    <!-- Custom Css -->
-    <link rel="stylesheet" href="./Css/main.css" />
+  <!-- Swiper JS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-    <link rel="stylesheet" href="./Css/carousel.css" />
+  <!-- Custom Css -->
+  <link rel="stylesheet" href="./Css/main.css" />
 
-    <title>Waigh Nutrition</title>
+  <link rel="stylesheet" href="./Css/carousel.css" />
 
-    <!-- Scroll Reveal -->
-    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-  </head>
-  <body class="pt-0" style="position: relative">
-    <!-- Loader -->
-    <div id="loader">
-      <div class="ring"></div>
-      <div class="brand-text">Waigh Nutrition</div>
-    </div>
+  <title>Waigh Nutrition</title>
 
-    <nav
-      class="navbar sticky-top navbar-expand-md navbar-dark"
-      style="background-color: var(--theme-dark-blue)"
-    >
-      <div class="container">
-        <a class="navbar-brand" href="#">
-          <img
-            src="./Assets/Images/Waigh_Nutrition_Logo.png"
-            alt="Logo Weigh"
-            class="logo-main"
-          />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarCollapse"
-          aria-controls="navbarCollapse"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse justify-content-end"
-          id="navbarCollapse"
-        >
-          <ul class="navbar-nav mb-2 mb-md-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#products-section">Products</a>
-            </li>
-          </ul>
-        </div>
+  <!-- Scroll Reveal -->
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+</head>
+
+<body class="pt-0" style="position: relative">
+  <!-- Loader -->
+  <div id="loader">
+    <div class="ring"></div>
+    <div class="brand-text">Waigh Nutrition</div>
+  </div>
+
+  <nav class="navbar sticky-top navbar-expand-md navbar-dark" style="background-color: var(--theme-dark-blue)">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="./Assets/Images/Waigh_Nutrition_Logo.png" alt="Logo Weigh" class="logo-main" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+        <ul class="navbar-nav mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#products-section">Products</a>
+          </li>
+        </ul>
       </div>
-    </nav>
-    <main>
-      <!-- <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    </div>
+  </nav>
+  <main>
+    <!-- <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button
             type="button"
@@ -215,106 +187,58 @@
         </div>
       </div> -->
 
-      <div
-        id="carouselExampleIndicators"
-        class="carousel slide carousel-fade"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="1"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="3"
-            aria-label="Slide 4"
-          ></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="2500">
-            <img
-              src="./Assets/Images/Website-banner-(2).jpg"
-              class="d-block w-100"
-              alt="..."
-            />
-          </div>
-          <div class="carousel-item" data-bs-interval="2500">
-            <img
-              src="./Assets/Images/shilajitgold-banner.jpg"
-              class="d-block w-100"
-              alt="..."
-            />
-          </div>
-          <div class="carousel-item" data-bs-interval="2500">
-            <img
-              src="./Assets/Images/testowaigold-banner.jpg"
-              class="d-block w-100"
-              alt="..."
-            />
-          </div>
-          <div class="carousel-item" data-bs-interval="2500">
-            <img
-              src="./Assets/Images/fatcrushgold-banner.jpg"
-              class="d-block w-100"
-              alt="..."
-            />
-          </div>
-        </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+    <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="active"
+          aria-current="true" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
       </div>
-
-      <!-- Testowai Gold Section -->
-      <section class="my-5" id="products-section">
-        <div class="container">
-          <div class="row align-items-center">
-            <!-- Left Side - Product Image -->
-            <div
-              class="col-lg-6 text-center mb-4 mb-md-0"
-              style="position: relative"
-            >
-              <!-- <img
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="2500">
+          <img src="./Assets/Images/Website-banner-(2).jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item" data-bs-interval="2500">
+          <img src="./Assets/Images/shilajitgold-banner.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item" data-bs-interval="2500">
+          <img src="./Assets/Images/testowaigold-banner.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item" data-bs-interval="2500">
+          <img src="./Assets/Images/fatcrushgold-banner.jpg" class="d-block w-100" alt="..." />
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <button id="playStopBtn" class="btn position-absolute start-50 translate-middle"
+      style="z-index: 1000; padding: 1rem; border-radius: 50%; background-color: rgba(255, 0, 0, 0.5);">
+      <i id="playStopIcon" class="bi bi-stop-fill" style="color: white;"></i>
+    </button>
+    <!-- Testowai Gold Section -->
+    <section class="my-5" id="products-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Left Side - Product Image -->
+          <div class="col-lg-6 text-center mb-4 mb-md-0" style="position: relative">
+            <!-- <img
                 src="./Assets/Images/fatcrush-gold.png"
                 alt="Waigh Fatcrush Gold"
                 class="image-product"
               /> -->
-              <!-- <div class="swiper mySwiper">
+            <!-- <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <img src="./Assets/Images/testowai-gold.png" alt="" />
@@ -333,70 +257,60 @@
                   </div>
                 </div>
               </div> -->
-              <div class="swiper swiper-testowaigold-main common-swiper-main">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <img src="./Assets/Images/w3.png" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./Assets/Images/w2.png" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./Assets/Images/w1.png" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./Assets/Images/shilajitgold6.webp" />
-                  </div>
+            <div class="swiper swiper-testowaigold-main common-swiper-main">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./Assets/Images/w3.png" />
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+                <div class="swiper-slide">
+                  <img src="./Assets/Images/w2.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./Assets/Images/w1.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./Assets/Images/shilajitgold6.webp" />
+                </div>
               </div>
-              <div
-                thumbsSlider=""
-                class="swiper swiper-testowaigold common-swiper"
-              >
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <img src="./Assets/Images/w3.png" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./Assets/Images/w2.png" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./Assets/Images/w1.png" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./Assets/Images/shilajitgold6.webp" />
-                  </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+            <div thumbsSlider="" class="swiper swiper-testowaigold common-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./Assets/Images/w3.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./Assets/Images/w2.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./Assets/Images/w1.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./Assets/Images/shilajitgold6.webp" />
                 </div>
               </div>
             </div>
+          </div>
 
-            <!-- Right Side - Product Details -->
-            <div class="col-lg-6">
-              <p class="mb-1 text-warning">
-                <i class="bi bi-star-fill"></i> 4.9 / 5
-              </p>
-              <h2
-                class="fw-bold fat-gold-headline product-headline my-4"
-                style="color: var(--theme-gold)"
-              >
-                TestoWai Gold- A Natural Testa Booster | Testa Booster Ayurvedic
-                Herbs for Daily Strength | Shilajit, Safed Musli For Energy
-                Stamina & Muscle Strength Ashwaganda 60 Capsule
-              </h2>
+          <!-- Right Side - Product Details -->
+          <div class="col-lg-6">
+            <p class="mb-1 text-warning">
+              <i class="bi bi-star-fill"></i> 4.9 / 5
+            </p>
+            <h2 class="fw-bold fat-gold-headline product-headline my-4" style="color: var(--theme-gold)">
+              TestoWai Gold- A Natural Testa Booster | Testa Booster Ayurvedic
+              Herbs for Daily Strength | Shilajit, Safed Musli For Energy
+              Stamina & Muscle Strength Ashwaganda 60 Capsule
+            </h2>
 
-              <div class="d-flex align-items-center mb-3">
-                <h3 class="fw-bold mb-0">Rs. 1,599.00</h3>
-                <span
-                  class="badge ms-3"
-                  style="background-color: var(--theme-green-1)"
-                  >Best Price</span
-                >
-              </div>
+            <div class="d-flex align-items-center mb-3">
+              <h3 class="fw-bold mb-0">Rs. 1,599.00</h3>
+              <span class="badge ms-3" style="background-color: var(--theme-green-1)">Best Price</span>
+            </div>
 
-              <!-- Weight Options -->
-              <!-- <div class="mb-4">
+            <!-- Weight Options -->
+            <!-- <div class="mb-4">
                 <button class="btn btn-outline-light me-2">25g</button>
                 <button class="btn btn-outline-light me-2">
                   50g | Extra 10% Off
@@ -406,110 +320,85 @@
                 </button>
               </div> -->
 
-              <!-- Buy Button -->
-              <a
-                class="btn w-100 btn-theme-green"
-                href="https://dl.flipkart.com/s/SBOLWeuuuN"
-                target="_blank"
-              >
-                BUY NOW
-              </a>
+            <!-- Buy Button -->
+            <a class="btn w-100 btn-theme-green" href="https://dl.flipkart.com/s/SBOLWeuuuN" target="_blank">
+              BUY NOW
+            </a>
 
-              <!-- Accordion -->
-              <div class="accordion mt-4" id="testowaigold-accordion">
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingOne">
-                    <button
-                      class="accordion-button"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#testowaigold-imgredients"
-                    >
-                      Ingredients
-                    </button>
-                  </h2>
-                  <div
-                    id="testowaigold-imgredients"
-                    class="accordion-collapse collapse show"
-                    data-bs-parent="#testowaigold-accordion"
-                  >
-                    <div class="accordion-body">
-                      Serving Size: 250 mg Pure Shilajit Resin (78% Fulvic
-                      Acid): 200 mg Ashwagandha (5% Withanolides) (10:1
-                      Extract): 10 mg (Equivalent to 100 mg of Ashwagandha Root
-                      Powder) Gokshura (50% Saponins) (10:1 Extract): 10 mg
-                      (Equivalent to 100 mg of Gokshura Powder) Swarna Bhasma
-                      (Gold ASH): 10 mg Safed Musli (10:1 Extract): 10 mg
-                      (Equivalent to 100 mg of Safed Musli Root Powder) Kawach
-                      (10:1 Extract): 10 mg (Equivalent to 100 mg of Kawach
-                      Powder)
-                    </div>
+            <!-- Accordion -->
+            <div class="accordion mt-4" id="testowaigold-accordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#testowaigold-imgredients">
+                    Ingredients
+                  </button>
+                </h2>
+                <div id="testowaigold-imgredients" class="accordion-collapse collapse show"
+                  data-bs-parent="#testowaigold-accordion">
+                  <div class="accordion-body">
+                    Serving Size: 250 mg Pure Shilajit Resin (78% Fulvic
+                    Acid): 200 mg Ashwagandha (5% Withanolides) (10:1
+                    Extract): 10 mg (Equivalent to 100 mg of Ashwagandha Root
+                    Powder) Gokshura (50% Saponins) (10:1 Extract): 10 mg
+                    (Equivalent to 100 mg of Gokshura Powder) Swarna Bhasma
+                    (Gold ASH): 10 mg Safed Musli (10:1 Extract): 10 mg
+                    (Equivalent to 100 mg of Safed Musli Root Powder) Kawach
+                    (10:1 Extract): 10 mg (Equivalent to 100 mg of Kawach
+                    Powder)
                   </div>
                 </div>
+              </div>
 
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingTwo">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#testowaigold-benefits"
-                    >
-                      Benefits
-                    </button>
-                  </h2>
-                  <div
-                    id="testowaigold-benefits"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#testowaigold-accordion"
-                  >
-                    <div class="accordion-body">
-                      Boost your energy, enhance muscle growth, and reclaim your
-                      vitality with our all-natural testosterone booster.
-                      Formulated with clinically tested ingredients, it supports
-                      increased strength, stamina, and performance—both in and
-                      out of the gym. Whether you're looking to break through
-                      workout plateaus or simply feel more energized every day,
-                      our supplement helps you stay at your peak.
-                    </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#testowaigold-benefits">
+                    Benefits
+                  </button>
+                </h2>
+                <div id="testowaigold-benefits" class="accordion-collapse collapse"
+                  data-bs-parent="#testowaigold-accordion">
+                  <div class="accordion-body">
+                    Boost your energy, enhance muscle growth, and reclaim your
+                    vitality with our all-natural testosterone booster.
+                    Formulated with clinically tested ingredients, it supports
+                    increased strength, stamina, and performance—both in and
+                    out of the gym. Whether you're looking to break through
+                    workout plateaus or simply feel more energized every day,
+                    our supplement helps you stay at your peak.
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Fatcrush Gold Section -->
-      <section class="mt-5 mb-5">
-        <div class="container">
-          <div class="row align-items-center">
-            <!-- Left Side - Product Details -->
-            <div class="col-lg-6 order-2 order-lg-1">
-              <p class="mb-1 text-warning">
-                <i class="bi bi-star-fill"></i> 4.9 / 5
-              </p>
-              <h2
-                class="fw-bold fat-gold-headline product-headline my-4"
-                style="color: var(--theme-gold)"
-              >
-                Fatcrush Gold- A Natural Fat Burner | Fat Burner for Weight Loss
-                for Women and Men | Weight Loss Supplement Capsules | Weight
-                Management | Helps Convert Fat into Energy Supplement (60
-                Capsules)
-              </h2>
+    <!-- Fatcrush Gold Section -->
+    <section class="mt-5 mb-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Left Side - Product Details -->
+          <div class="col-lg-6 order-2 order-lg-1">
+            <p class="mb-1 text-warning">
+              <i class="bi bi-star-fill"></i> 4.9 / 5
+            </p>
+            <h2 class="fw-bold fat-gold-headline product-headline my-4" style="color: var(--theme-gold)">
+              Fatcrush Gold- A Natural Fat Burner | Fat Burner for Weight Loss
+              for Women and Men | Weight Loss Supplement Capsules | Weight
+              Management | Helps Convert Fat into Energy Supplement (60
+              Capsules)
+            </h2>
 
-              <div class="d-flex align-items-center mb-3">
-                <h3 class="fw-bold mb-0">Rs. 1,549.00</h3>
-                <span
-                  class="badge ms-3"
-                  style="background-color: var(--theme-green-1)"
-                  >Best Price</span
-                >
-              </div>
+            <div class="d-flex align-items-center mb-3">
+              <h3 class="fw-bold mb-0">Rs. 1,549.00</h3>
+              <span class="badge ms-3" style="background-color: var(--theme-green-1)">Best Price</span>
+            </div>
 
-              <!-- Weight Options -->
-              <!-- <div class="mb-4">
+            <!-- Weight Options -->
+            <!-- <div class="mb-4">
                 <button class="btn btn-outline-light me-2">25g</button>
                 <button class="btn btn-outline-light me-2">
                   50g | Extra 10% Off
@@ -519,213 +408,184 @@
                 </button>
               </div> -->
 
-              <!-- Buy Button -->
-              <a
-                class="btn w-100 btn-theme-green"
-                href="https://dl.flipkart.com/dl/product/p/itme?pid=AYDHDWQCMGRGEZHJ&lid=LSTAYDHDWQCMGRGEZHJ8WAWND"
-                target="_blank"
-              >
-                BUY NOW
-              </a>
+            <!-- Buy Button -->
+            <a class="btn w-100 btn-theme-green"
+              href="https://dl.flipkart.com/dl/product/p/itme?pid=AYDHDWQCMGRGEZHJ&lid=LSTAYDHDWQCMGRGEZHJ8WAWND"
+              target="_blank">
+              BUY NOW
+            </a>
 
-              <!-- Accordion -->
-              <div class="accordion mt-4" id="fatcrushgold-accordion">
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingOne">
-                    <button
-                      class="accordion-button"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#fatcrushgold-imgredients"
-                    >
-                      Ingredients
-                    </button>
-                  </h2>
-                  <div
-                    id="fatcrushgold-imgredients"
-                    class="accordion-collapse collapse show"
-                    data-bs-parent="#fatcrushgold-accordion"
-                  >
-                    <div class="accordion-body">
-                      Serving Size: 250 mg Pure Shilajit Resin (78% Fulvic
-                      Acid): 200 mg Ashwagandha (5% Withanolides) (10:1
-                      Extract): 10 mg (Equivalent to 100 mg of Ashwagandha Root
-                      Powder) Gokshura (50% Saponins) (10:1 Extract): 10 mg
-                      (Equivalent to 100 mg of Gokshura Powder) Swarna Bhasma
-                      (Gold ASH): 10 mg Safed Musli (10:1 Extract): 10 mg
-                      (Equivalent to 100 mg of Safed Musli Root Powder) Kawach
-                      (10:1 Extract): 10 mg (Equivalent to 100 mg of Kawach
-                      Powder)
-                    </div>
+            <!-- Accordion -->
+            <div class="accordion mt-4" id="fatcrushgold-accordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#fatcrushgold-imgredients">
+                    Ingredients
+                  </button>
+                </h2>
+                <div id="fatcrushgold-imgredients" class="accordion-collapse collapse show"
+                  data-bs-parent="#fatcrushgold-accordion">
+                  <div class="accordion-body">
+                    Serving Size: 250 mg Pure Shilajit Resin (78% Fulvic
+                    Acid): 200 mg Ashwagandha (5% Withanolides) (10:1
+                    Extract): 10 mg (Equivalent to 100 mg of Ashwagandha Root
+                    Powder) Gokshura (50% Saponins) (10:1 Extract): 10 mg
+                    (Equivalent to 100 mg of Gokshura Powder) Swarna Bhasma
+                    (Gold ASH): 10 mg Safed Musli (10:1 Extract): 10 mg
+                    (Equivalent to 100 mg of Safed Musli Root Powder) Kawach
+                    (10:1 Extract): 10 mg (Equivalent to 100 mg of Kawach
+                    Powder)
                   </div>
                 </div>
+              </div>
 
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingTwo">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#fatcrushgold-benefits"
-                    >
-                      Benefits
-                    </button>
-                  </h2>
-                  <div
-                    id="fatcrushgold-benefits"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#fatcrushgold-accordion"
-                  >
-                    <div class="accordion-body">
-                      🔥 Ultimate Fat Burner - Ignite Your Metabolism & Burn Fat
-                      Fast Unlock your body’s full fat-burning potential with
-                      our premium Fat Burner supplement! Formulated with
-                      scientifically backed ingredients, this powerful
-                      thermogenic blend is designed to support weight loss,
-                      boost metabolism, and enhance energy levels—without the
-                      crash.
-                    </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#fatcrushgold-benefits">
+                    Benefits
+                  </button>
+                </h2>
+                <div id="fatcrushgold-benefits" class="accordion-collapse collapse"
+                  data-bs-parent="#fatcrushgold-accordion">
+                  <div class="accordion-body">
+                    🔥 Ultimate Fat Burner - Ignite Your Metabolism & Burn Fat
+                    Fast Unlock your body’s full fat-burning potential with
+                    our premium Fat Burner supplement! Formulated with
+                    scientifically backed ingredients, this powerful
+                    thermogenic blend is designed to support weight loss,
+                    boost metabolism, and enhance energy levels—without the
+                    crash.
                   </div>
                 </div>
               </div>
             </div>
+          </div>
 
-            <!-- Right Side - Product Image -->
-            <div class="col-lg-6 text-center mb-4 mb-md-0 order-1 order-lg-2">
-              <!-- <img
+          <!-- Right Side - Product Image -->
+          <div class="col-lg-6 text-center mb-4 mb-md-0 order-1 order-lg-2">
+            <!-- <img
                 src="./Assets/Images/fatcrush-gold.png"
                 alt="Waigh Fatcrush Gold"
                 class="image-product"
               /> -->
-              <div class="swiper swiper-fatcrushgold-main common-swiper-main">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <img src="./Assets/Images/FatCrush (white).png" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./Assets/Images/FatCrush wh2.png" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./Assets/Images/shilajitgold6.webp" />
-                  </div>
+            <div class="swiper swiper-fatcrushgold-main common-swiper-main">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./Assets/Images/FatCrush (white).png" />
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+                <div class="swiper-slide">
+                  <img src="./Assets/Images/FatCrush wh2.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./Assets/Images/shilajitgold6.webp" />
+                </div>
               </div>
-              <div
-                thumbsSlider=""
-                class="swiper swiper-fatcrushgold common-swiper"
-              >
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <img src="./Assets/Images/FatCrush (white).png" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./Assets/Images/FatCrush wh2.png" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./Assets/Images/shilajitgold6.webp" />
-                  </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+            <div thumbsSlider="" class="swiper swiper-fatcrushgold common-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./Assets/Images/FatCrush (white).png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./Assets/Images/FatCrush wh2.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./Assets/Images/shilajitgold6.webp" />
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Shilajit Gold Section -->
-      <section class="my-5">
-        <div class="container">
-          <div class="row align-items-center">
-            <!-- Left Side - Product Image -->
-            <div class="col-lg-6 text-center mb-4 mb-md-0">
-              <!-- <img
+    <!-- Shilajit Gold Section -->
+    <section class="my-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Left Side - Product Image -->
+          <div class="col-lg-6 text-center mb-4 mb-md-0">
+            <!-- <img
                 src="./Assets/Images/fatcrush-gold.png"
                 alt="Waigh Fatcrush Gold"
                 class="image-product"
               /> -->
-              <div class="swiper swiper-shilajitgold-main common-swiper-main">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <img src="./Assets/Images/Single WaiGH.jpg" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./Assets/Images/shilajitgold4.webp" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./Assets/Images/shilajitgold6.webp" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./Assets/Images/shilajitgold5.webp" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./Assets/Images/shilajitgold8.jpeg" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./Assets/Images/shilajitgold7.jpeg" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./Assets/Images/shilajitgold9.jpeg" />
-                  </div>
+            <div class="swiper swiper-shilajitgold-main common-swiper-main">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./Assets/Images/Single WaiGH.jpg" />
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+                <div class="swiper-slide">
+                  <img src="./Assets/Images/shilajitgold4.webp" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./Assets/Images/shilajitgold6.webp" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./Assets/Images/shilajitgold5.webp" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./Assets/Images/shilajitgold8.jpeg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./Assets/Images/shilajitgold7.jpeg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./Assets/Images/shilajitgold9.jpeg" />
+                </div>
               </div>
-              <div
-                thumbsSlider=""
-                class="swiper swiper-shilajitgold common-swiper"
-              >
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <img src="./Assets/Images/Single WaiGH.jpg" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./Assets/Images/shilajitgold4.webp" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./Assets/Images/shilajitgold6.webp" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./Assets/Images/shilajitgold5.webp" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./Assets/Images/shilajitgold8.jpeg" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./Assets/Images/shilajitgold7.jpeg" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./Assets/Images/shilajitgold9.jpeg" />
-                  </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+            <div thumbsSlider="" class="swiper swiper-shilajitgold common-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./Assets/Images/Single WaiGH.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./Assets/Images/shilajitgold4.webp" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./Assets/Images/shilajitgold6.webp" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./Assets/Images/shilajitgold5.webp" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./Assets/Images/shilajitgold8.jpeg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./Assets/Images/shilajitgold7.jpeg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./Assets/Images/shilajitgold9.jpeg" />
                 </div>
               </div>
             </div>
+          </div>
 
-            <!-- Right Side - Product Details -->
-            <div class="col-lg-6">
-              <p class="mb-1 text-warning">
-                <i class="bi bi-star-fill"></i> 4.9 / 5
-              </p>
-              <h2
-                class="fw-bold fat-gold-headline product-headline my-4"
-                style="color: var(--theme-gold)"
-              >
-                Pure Original Himalayan Shilajit | Gold Resin - 20g |
-                250mg/Serving | 80 Servings | Boost Muscle Growth & Stamina |
-                100% Ayurvedic | Builds Immunity
-              </h2>
+          <!-- Right Side - Product Details -->
+          <div class="col-lg-6">
+            <p class="mb-1 text-warning">
+              <i class="bi bi-star-fill"></i> 4.9 / 5
+            </p>
+            <h2 class="fw-bold fat-gold-headline product-headline my-4" style="color: var(--theme-gold)">
+              Pure Original Himalayan Shilajit | Gold Resin - 20g |
+              250mg/Serving | 80 Servings | Boost Muscle Growth & Stamina |
+              100% Ayurvedic | Builds Immunity
+            </h2>
 
-              <div class="d-flex align-items-center mb-3">
-                <h3 class="fw-bold mb-0">Rs. 1,449.00</h3>
-                <span
-                  class="badge ms-3"
-                  style="background-color: var(--theme-green-1)"
-                  >Best Price</span
-                >
-              </div>
+            <div class="d-flex align-items-center mb-3">
+              <h3 class="fw-bold mb-0">Rs. 1,449.00</h3>
+              <span class="badge ms-3" style="background-color: var(--theme-green-1)">Best Price</span>
+            </div>
 
-              <!-- Weight Options -->
-              <!-- <div class="mb-4">
+            <!-- Weight Options -->
+            <!-- <div class="mb-4">
                 <button class="btn btn-outline-light me-2">25g</button>
                 <button class="btn btn-outline-light me-2">
                   50g | Extra 10% Off
@@ -735,211 +595,205 @@
                 </button>
               </div> -->
 
-              <!-- Buy Button -->
-              <a
-                class="btn w-100 btn-theme-green"
-                href="https://dl.flipkart.com/s/mwINM8NNNN"
-                target="_blank"
-              >
-                BUY NOW
-              </a>
+            <!-- Buy Button -->
+            <a class="btn w-100 btn-theme-green" href="https://dl.flipkart.com/s/mwINM8NNNN" target="_blank">
+              BUY NOW
+            </a>
 
-              <!-- Accordion -->
-              <div class="accordion mt-4" id="shilajitgold-accordion">
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingOne">
-                    <button
-                      class="accordion-button"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#shilajitgold-imgredients"
-                    >
-                      Ingredients
-                    </button>
-                  </h2>
-                  <div
-                    id="shilajitgold-imgredients"
-                    class="accordion-collapse collapse show"
-                    data-bs-parent="#shilajitgold-accordion"
-                  >
-                    <div class="accordion-body">
-                      Serving Size: 250 mg Pure Shilajit Resin (78% Fulvic
-                      Acid): 200 mg Ashwagandha (5% Withanolides) (10:1
-                      Extract): 10 mg (Equivalent to 100 mg of Ashwagandha Root
-                      Powder) Gokshura (50% Saponins) (10:1 Extract): 10 mg
-                      (Equivalent to 100 mg of Gokshura Powder) Swarna Bhasma
-                      (Gold ASH): 10 mg Safed Musli (10:1 Extract): 10 mg
-                      (Equivalent to 100 mg of Safed Musli Root Powder) Kawach
-                      (10:1 Extract): 10 mg (Equivalent to 100 mg of Kawach
-                      Powder)
-                    </div>
+            <!-- Accordion -->
+            <div class="accordion mt-4" id="shilajitgold-accordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#shilajitgold-imgredients">
+                    Ingredients
+                  </button>
+                </h2>
+                <div id="shilajitgold-imgredients" class="accordion-collapse collapse show"
+                  data-bs-parent="#shilajitgold-accordion">
+                  <div class="accordion-body">
+                    Serving Size: 250 mg Pure Shilajit Resin (78% Fulvic
+                    Acid): 200 mg Ashwagandha (5% Withanolides) (10:1
+                    Extract): 10 mg (Equivalent to 100 mg of Ashwagandha Root
+                    Powder) Gokshura (50% Saponins) (10:1 Extract): 10 mg
+                    (Equivalent to 100 mg of Gokshura Powder) Swarna Bhasma
+                    (Gold ASH): 10 mg Safed Musli (10:1 Extract): 10 mg
+                    (Equivalent to 100 mg of Safed Musli Root Powder) Kawach
+                    (10:1 Extract): 10 mg (Equivalent to 100 mg of Kawach
+                    Powder)
                   </div>
                 </div>
+              </div>
 
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingTwo">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#shilajitgold-benefits"
-                    >
-                      Benefits
-                    </button>
-                  </h2>
-                  <div
-                    id="shilajitgold-benefits"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#shilajitgold-accordion"
-                  >
-                    <div class="accordion-body">
-                      We are bringing you the most effective Shilajit available
-                      in the market. Sourced from the pristine heights of the
-                      Gilgit Mountains at 18,000 feet, Rasayanam Shilajit is
-                      untouched by human activity and nurtured by mineral-rich,
-                      ancient soils. It is processed as per the Vedic process,
-                      the Suryatapi method, ensuring it retains its natural
-                      potency and nutritional density. Enhances fertility and
-                      libido: Boosts reproductive health and increases libido in
-                      both men and women.
-                    </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#shilajitgold-benefits">
+                    Benefits
+                  </button>
+                </h2>
+                <div id="shilajitgold-benefits" class="accordion-collapse collapse"
+                  data-bs-parent="#shilajitgold-accordion">
+                  <div class="accordion-body">
+                    We are bringing you the most effective Shilajit available
+                    in the market. Sourced from the pristine heights of the
+                    Gilgit Mountains at 18,000 feet, Rasayanam Shilajit is
+                    untouched by human activity and nurtured by mineral-rich,
+                    ancient soils. It is processed as per the Vedic process,
+                    the Suryatapi method, ensuring it retains its natural
+                    potency and nutritional density. Enhances fertility and
+                    libido: Boosts reproductive health and increases libido in
+                    both men and women.
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Footer HTML -->
-      <!-- Bootstrap 5 Footer -->
-      <footer class="text-light py-5" style="background-color: var(--theme-dark-blue)">
-        <div class="container">
-          <div class="row gy-4">
-            <!-- Brand Info -->
-            <div class="col-12 col-md-4">
-              <img src="./Assets/Images/Logo-yellow.png" alt="" />
-              <p class="mb-0">Empowering Your Health, Naturally.</p>
-            </div>
+    <!-- Footer HTML -->
+    <!-- Bootstrap 5 Footer -->
+    <footer class="text-light py-5" style="background-color: var(--theme-dark-blue)">
+      <div class="container">
+        <div class="row gy-4">
+          <!-- Brand Info -->
+          <div class="col-12 col-md-4">
+            <img src="./Assets/Images/Logo-yellow.png" alt="" />
+            <p class="mb-0">Empowering Your Health, Naturally.</p>
+          </div>
 
-            <!-- Website Links -->
-            <div class="col-6 col-md-4">
-              <h5 class="fw-semibold">Website Links</h5>
-              <ul class="list-unstyled">
-                <li>
-                  <a href="#" class="text-light text-decoration-none">Home</a>
-                </li>
-                <li>
-                  <a href="#" class="text-light text-decoration-none"
-                    >Contact</a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="text-light text-decoration-none"
-                    >Products</a
-                  >
-                </li>
-              </ul>
-            </div>
+          <!-- Website Links -->
+          <div class="col-6 col-md-4">
+            <h5 class="fw-semibold">Website Links</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-light text-decoration-none">Home</a>
+              </li>
+              <li>
+                <a href="#" class="text-light text-decoration-none">Contact</a>
+              </li>
+              <li>
+                <a href="#" class="text-light text-decoration-none">Products</a>
+              </li>
+            </ul>
+          </div>
 
-            <!-- Contact Details -->
-            <div class="col-6 col-md-4">
-              <h5 class="fw-semibold">Contact Details</h5>
-              <p class="mb-1">
-                <strong>Address:</strong><br />
-                241, Wailana,<br />
-                <strong>Sector-14, Yamuna City, G.B.Nagar-203203</strong>
-              </p>
-              <p class="mb-1">
-                <strong>Contact no:</strong>
-                <a
-                  href="tel:9990185015"
-                  class="text-warning text-decoration-none"
-                  >8287160032</a
-                >
-              </p>
-              <p class="mb-0">
-                <strong>Email:</strong>
-                <a
-                  href="mailto:info@waigh.in"
-                  class="text-warning text-decoration-none"
-                  >info@waigh.in</a
-                >
-              </p>
-            </div>
+          <!-- Contact Details -->
+          <div class="col-6 col-md-4">
+            <h5 class="fw-semibold">Contact Details</h5>
+            <p class="mb-1">
+              <strong>Address:</strong><br />
+              241, Wailana,<br />
+              <strong>Sector-14, Yamuna City, G.B.Nagar-203203</strong>
+            </p>
+            <p class="mb-1">
+              <strong>Contact no:</strong>
+              <a href="tel:9990185015" class="text-warning text-decoration-none">8287160032</a>
+            </p>
+            <p class="mb-0">
+              <strong>Email:</strong>
+              <a href="mailto:info@waigh.in" class="text-warning text-decoration-none">info@waigh.in</a>
+            </p>
           </div>
         </div>
-      </footer>
-    </main>
-  </body>
+      </div>
+    </footer>
+  </main>
+</body>
 
-  <!-- Bootstrap CDN Js -->
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-    crossorigin="anonymous"
-  ></script>
+<!-- Bootstrap CDN Js -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 
-  <!-- Swiper Js -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<!-- Swiper Js -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-  <script>
-    window.addEventListener("load", () => {
-      const loader = document.getElementById("loader");
-      const content = document.getElementById("content");
-      loader.classList.add("loader--hide");
-      setTimeout(() => {
-        loader.style.display = "none";
-        content.style.display = "block";
-      }, 600); // Wait for fade-out
+<script>
+  window.addEventListener("load", () => {
+    const loader = document.getElementById("loader");
+    const content = document.getElementById("content");
+    loader.classList.add("loader--hide");
+    setTimeout(() => {
+      loader.style.display = "none";
+      content.style.display = "block";
+    }, 600); // Wait for fade-out
+  });
+
+  document.querySelectorAll(".common-swiper").forEach((thumbEl, index) => {
+    const mainEl = thumbEl.parentElement.querySelector(".common-swiper-main");
+
+    // Init thumbs Swiper
+    const thumbsSwiper = new Swiper(thumbEl, {
+      loop: true,
+      spaceBetween: 10,
+      slidesPerView: 3,
+      freeMode: true,
+      watchSlidesProgress: true,
     });
 
-    document.querySelectorAll(".common-swiper").forEach((thumbEl, index) => {
-      const mainEl = thumbEl.parentElement.querySelector(".common-swiper-main");
-
-      // Init thumbs Swiper
-      const thumbsSwiper = new Swiper(thumbEl, {
-        loop: true,
-        spaceBetween: 10,
-        slidesPerView: 3,
-        freeMode: true,
-        watchSlidesProgress: true,
-      });
-
-      // Init main Swiper
-      const mainSwiper = new Swiper(mainEl, {
-        loop: true,
-        spaceBetween: 10,
-        navigation: {
-          nextEl: mainEl.querySelector(".swiper-button-next"),
-          prevEl: mainEl.querySelector(".swiper-button-prev"),
-        },
-        thumbs: {
-          swiper: thumbsSwiper,
-        },
-        autoplay: {
-          delay: 1500,
-          disableOnInteraction: false,
-        },
-      });
-
-      mainSwiper.autoplay.stop();
-
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              mainSwiper.autoplay.start();
-              observer.unobserve(mainEl);
-            }
-          });
-        },
-        {
-          threshold: 0.9, //The amount of section visible then Autoplay will start
-        }
-      );
-
-      observer.observe(mainEl);
+    // Init main Swiper
+    const mainSwiper = new Swiper(mainEl, {
+      loop: true,
+      spaceBetween: 10,
+      navigation: {
+        nextEl: mainEl.querySelector(".swiper-button-next"),
+        prevEl: mainEl.querySelector(".swiper-button-prev"),
+      },
+      thumbs: {
+        swiper: thumbsSwiper,
+      },
+      autoplay: {
+        delay: 1500,
+        disableOnInteraction: false,
+      },
     });
-  </script>
+
+    mainSwiper.autoplay.stop();
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            mainSwiper.autoplay.start();
+            observer.unobserve(mainEl);
+          }
+        });
+      },
+      {
+        threshold: 0.9, //The amount of section visible then Autoplay will start
+      }
+    );
+
+    observer.observe(mainEl);
+  });
+  
+  //Play Stop Button JS
+  const carouselElement = document.querySelector('#carouselExampleIndicators');
+  const carousel = new bootstrap.Carousel(carouselElement);
+  const playStopBtn = document.querySelector('#playStopBtn');
+  const playStopIcon = document.querySelector('#playStopIcon');
+
+  let isPlaying = true;
+
+  playStopBtn.addEventListener('click', function () {
+    if (isPlaying) {
+      // Pause the carousel
+      carousel.pause();
+      playStopIcon.classList.remove('bi-stop-fill');
+      playStopIcon.classList.add('bi-play-fill');
+      playStopBtn.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+      isPlaying = false;
+    } else {
+      // Resume the carousel
+      carousel.cycle();
+      playStopIcon.classList.remove('bi-play-fill');
+      playStopIcon.classList.add('bi-stop-fill');
+      playStopBtn.style.backgroundColor = 'rgba(255, 0, 0, 0.5)';
+      isPlaying = true;
+    }
+  });
+</script>
+
 </html>
