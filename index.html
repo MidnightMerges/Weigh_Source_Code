@@ -228,7 +228,29 @@
         data-bs-ride="carousel"
         style="position: relative"
       >
-        <div class="carousel-indicators d-flex align-items-center">
+        <button
+          id="playStopBtn"
+          class="btn ms-3"
+          style="
+            z-index: 1000;
+            position: absolute;
+            left: 50%;
+            transform: translate(-100%, 100%);
+            bottom: 0%;
+            padding: 0.9rem;
+            width: fit-content;
+            height: auto;
+            border-radius: 50%;
+            background-color: darkred;
+          "
+        >
+          <i
+            id="playStopIcon"
+            class="fa-solid fa-stop"
+            style="color: white"
+          ></i>
+        </button>
+        <div class="carousel-indicators">
           <button
             type="button"
             data-bs-target="#carouselExampleIndicators"
@@ -257,24 +279,6 @@
             data-bs-slide-to="3"
             aria-label="Slide 4"
           ></button>
-          <button
-            id="playStopBtn"
-            class="btn ms-3"
-            style="
-              z-index: 1000;
-              padding: 0.9rem;
-              width: fit-content;
-              height: auto;
-              border-radius: 50%;
-              background-color: red;
-            "
-          >
-            <i
-              id="playStopIcon"
-              class="fa-solid fa-stop"
-              style="color: white"
-            ></i>
-          </button>
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="2500">
@@ -334,7 +338,7 @@
           z-index: 5;
           position: relative;
         "
-        class="py-3"
+        class="py-3 my-5"
       >
         <p
           class="overlay"
