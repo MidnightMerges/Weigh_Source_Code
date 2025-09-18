@@ -1027,14 +1027,14 @@
         carousel.pause();
         playStopIcon.classList.remove("fa-stop");
         playStopIcon.classList.add("fa-play");
-        playStopBtn.style.backgroundColor = "green";
+        playStopBtn.style.backgroundColor = "darkgreen";
         isPlaying = false;
       } else {
         // Resume the carousel
         carousel.cycle();
         playStopIcon.classList.remove("fa-play");
         playStopIcon.classList.add("fa-stop");
-        playStopBtn.style.backgroundColor = "red";
+        playStopBtn.style.backgroundColor = "darkred";
         isPlaying = true;
       }
     });
