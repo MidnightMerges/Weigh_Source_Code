@@ -226,8 +226,9 @@
         id="carouselExampleIndicators"
         class="carousel slide carousel-fade"
         data-bs-ride="carousel"
+        style="position: relative"
       >
-        <div class="carousel-indicators">
+        <div class="carousel-indicators d-flex align-items-center">
           <button
             type="button"
             data-bs-target="#carouselExampleIndicators"
@@ -256,6 +257,24 @@
             data-bs-slide-to="3"
             aria-label="Slide 4"
           ></button>
+          <button
+            id="playStopBtn"
+            class="btn ms-3"
+            style="
+              z-index: 1000;
+              padding: 0.9rem;
+              width: fit-content;
+              height: auto;
+              border-radius: 50%;
+              background-color: rgba(255, 0, 0, 0.5);
+            "
+          >
+            <i
+              id="playStopIcon"
+              class="bi bi-stop-fill"
+              style="color: white"
+            ></i>
+          </button>
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="2500">
@@ -306,18 +325,6 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-      <button
-        id="playStopBtn"
-        class="btn position-absolute start-50 translate-middle"
-        style="
-          z-index: 1000;
-          padding: 1rem;
-          border-radius: 50%;
-          background-color: rgba(255, 0, 0, 0.5);
-        "
-      >
-        <i id="playStopIcon" class="bi bi-stop-fill" style="color: white"></i>
-      </button>
 
       <section
         style="
@@ -353,6 +360,7 @@
           100% Pure Shilajit Sourced From High Altitudes
         </h1>
       </section>
+
       <!-- Testowai Gold Section -->
       <section class="my-5" id="products-section">
         <div class="container">
