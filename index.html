@@ -266,12 +266,12 @@
               width: fit-content;
               height: auto;
               border-radius: 50%;
-              background-color: rgba(255, 0, 0, 0.5);
+              background-color: red;
             "
           >
             <i
               id="playStopIcon"
-              class="bi bi-stop-fill"
+              class="fa-solid fa-stop"
               style="color: white"
             ></i>
           </button>
@@ -1021,16 +1021,16 @@
       if (isPlaying) {
         // Pause the carousel
         carousel.pause();
-        playStopIcon.classList.remove("bi-stop-fill");
-        playStopIcon.classList.add("bi-play-fill");
-        playStopBtn.style.backgroundColor = "rgba(0, 128, 0, 0.5)";
+        playStopIcon.classList.remove("fa-stop");
+        playStopIcon.classList.add("fa-play");
+        playStopBtn.style.backgroundColor = "green";
         isPlaying = false;
       } else {
         // Resume the carousel
         carousel.cycle();
-        playStopIcon.classList.remove("bi-play-fill");
-        playStopIcon.classList.add("bi-stop-fill");
-        playStopBtn.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
+        playStopIcon.classList.remove("fa-play");
+        playStopIcon.classList.add("fa-stop");
+        playStopBtn.style.backgroundColor = "red";
         isPlaying = true;
       }
     });
